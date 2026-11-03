@@ -1,11 +1,11 @@
 Instance: message-drug
-InstanceOf: MessageHeaderAIDSDR
+InstanceOf: MessageHeaderHIVDR
 Title: "用藥通報訊息"
-Description: "依據用藥通報訊息-MessageHeader AIDS Drug Profile呈現用藥通報訊息之範例"
+Description: "依據用藥通報訊息-MessageHeader HIV Drug Profile呈現用藥通報訊息之範例"
 Usage: #example
 
 * eventCoding.code = #drug
-* eventCoding.system = "https://cdc.gov.tw/aids/CodeSystem/cdc-message-event"
+* eventCoding.system = "https://cdc.gov.tw/hiv/CodeSystem/cdc-message-event"
 * sender.reference = "Organization/hosp"
 * source.endpoint = "https://www.ntuh.gov.tw"
 * focus[0].reference = "MedicationRequest/medReq-min"

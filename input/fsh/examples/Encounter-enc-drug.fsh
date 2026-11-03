@@ -1,7 +1,7 @@
 Instance: enc-drug
-InstanceOf: EncounterAIDSDR
+InstanceOf: EncounterHIVDR
 Title: "就醫資訊"
-Description: "依據就醫資訊-Encounter AIDS Drug Profile呈現用藥通報之就醫資訊範例"
+Description: "依據就醫資訊-Encounter HIV Drug Profile呈現用藥通報之就醫資訊範例"
 Usage: #example
 * status = #finished
 * serviceType = https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw#AC

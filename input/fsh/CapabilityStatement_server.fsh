@@ -1,10 +1,10 @@
-Instance: CapabilityStatementAIDSServer
+Instance: CapabilityStatementHIVServer
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://cdc.gov.tw/aids/CapabilityStatement/CapabilityStatementAIDSServer"
+* url = "https://cdc.gov.tw/hiv/CapabilityStatement/CapabilityStatementHIVServer"
 * version = "0.1.0"
-* name = "CapabilityStatementAIDSServer"
-* title = "臺灣愛滋病-伺服端(AIDS Server)"
+* name = "CapabilityStatementHIVServer"
+* title = "臺灣愛滋病-伺服端(HIV Server)"
 * status = #active
 * experimental = false
 * publisher = "衛生福利部疾病管制署"
@@ -14,10 +14,10 @@ Usage: #definition
 * format[0] = #application/fhir+json
 * format[+] = #application/fhir+xml
 * patchFormat = #application/json-patch+json
-* implementationGuide = "https://cdc.gov.tw/aids/ImplementationGuide/tw.gov.mohw.cdc.aids"
-* description = "臺灣愛滋病實作指引(TWAIDS IG)伺服端(Server)之能力聲明"
+* implementationGuide = "https://cdc.gov.tw/hiv/ImplementationGuide/tw.gov.mohw.cdc.hiv"
+* description = "臺灣愛滋病實作指引(TWHIV IG)伺服端(Server)之能力聲明"
 * rest.mode = #server
-* rest.documentation = "臺灣愛滋病-伺服端(AIDS Server)必須(SHALL)：(1)支援本實作指引中所有profiles (2)根據FHIR規範實作RESTful (3)回傳狀態碼-①(Status 400)：無效參數(invalid parameter)、②(Status 401/4xx)：未經授權的請求(unauthorized request)、③(Status 403)：未充分授權的資料存取範圍(insufficient premission scope)、④(Status 404)：未知的resource(unknown resource) (4)支援JSON格式 (5)可識別每個新增到Server的實例(instance)之meta.profile是否為臺灣事前審查Profiles Defining URL，並確認實例是否依循Profile製作。臺灣事前審查-伺服端建議應該(SHOULD)：(1)支援XML格式。"
+* rest.documentation = "臺灣愛滋病-伺服端(HIV Server)必須(SHALL)：(1)支援本實作指引中所有profiles (2)根據FHIR規範實作RESTful (3)回傳狀態碼-①(Status 400)：無效參數(invalid parameter)、②(Status 401/4xx)：未經授權的請求(unauthorized request)、③(Status 403)：未充分授權的資料存取範圍(insufficient premission scope)、④(Status 404)：未知的resource(unknown resource) (4)支援JSON格式 (5)可識別每個新增到Server的實例(instance)之meta.profile是否為臺灣事前審查Profiles Defining URL，並確認實例是否依循Profile製作。臺灣事前審查-伺服端建議應該(SHOULD)：(1)支援XML格式。"
 * rest.security.service = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
 * rest.security.description = "Server必須(SHALL)透過回傳 HTTP 401「未授權」， HTTP 403「禁止」，或 HTTP 404 「未找到」，來拒絕任何未經授權的請求。"
 
@@ -31,7 +31,7 @@ Usage: #definition
 * rest.resource[+].type = #Bundle
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Bundle-aids-drug"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Bundle-hiv-drug"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -49,7 +49,7 @@ Usage: #definition
 * rest.resource[+].type = #MessageHeader
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/MessageHeader-aids-drug"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/MessageHeader-hiv-drug"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -67,7 +67,7 @@ Usage: #definition
 * rest.resource[+].type = #Organization
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Organization-aids"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Organization-hiv"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -85,7 +85,7 @@ Usage: #definition
 * rest.resource[+].type = #Patient
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Patient-aids"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Patient-hiv"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -121,7 +121,7 @@ Usage: #definition
 * rest.resource[+].type = #Specimen
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Specimen-aids-drug"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Specimen-hiv-drug"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -139,7 +139,7 @@ Usage: #definition
 * rest.resource[+].type = #Encounter
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Encounter-aids-drug"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Encounter-hiv-drug"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -157,7 +157,7 @@ Usage: #definition
 * rest.resource[+].type = #Procedure
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHOULD
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Procedure-aids-drug"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Procedure-hiv-drug"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -175,7 +175,7 @@ Usage: #definition
 * rest.resource[+].type = #Practitioner
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].profile = "https://cdc.gov.tw/aids/StructureDefinition/Practitioner-aids"
+* rest.resource[=].profile = "https://cdc.gov.tw/hiv/StructureDefinition/Practitioner-hiv"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create

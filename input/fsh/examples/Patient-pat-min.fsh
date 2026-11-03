@@ -1,7 +1,7 @@
 Instance: pat-min
-InstanceOf: PatientAIDS
+InstanceOf: PatientHIV
 Title: "用藥通報病人資訊"
-Description: "依據病人資訊-Patient AIDS Profile呈現愛滋用藥通報病人基本資訊之範例"
+Description: "依據病人資訊-Patient HIV Profile呈現愛滋用藥通報病人基本資訊之範例"
 Usage: #example
 * identifier[idCardNumber].use = #official
 * identifier[idCardNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -19,7 +19,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	<div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-aids.html\">病人資訊-Patient AIDS</a></p>
+        <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-hiv.html\">病人資訊-Patient HIV</a></p>
     </div>
 	<blockquote>
 		<p>

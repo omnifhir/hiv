@@ -1,7 +1,7 @@
 Instance: hosp
-InstanceOf: OrganizationAIDS
+InstanceOf: OrganizationHIV
 Title: "醫事機構"
-Description: "依據醫事機構-Organization AIDS Profile呈現醫事機構之範例"
+Description: "依據醫事機構-Organization HIV Profile呈現醫事機構之範例"
 Usage: #example
 * identifier.use = #official
 * identifier.system = "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw"
@@ -15,7 +15,7 @@ Usage: #example
     <b>醫事機構</b>
   </h3>
   <div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\">
-    <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-aids.html\">醫事機構-Organization AIDS</a></p>
+    <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization-hiv.html\">醫事機構-Organization HIV</a></p>
   </div>
   <p>
     <b>識別碼型別</b>：Provider number<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">（ <a href=\"http://terminology.hl7.org/CodeSystem/v2-0203\">IdentifierType</a>#PRN） </span>   <br/>

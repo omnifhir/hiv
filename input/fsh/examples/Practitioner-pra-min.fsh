@@ -1,5 +1,5 @@
 Instance: pra-min
-InstanceOf: PractitionerAIDS
+InstanceOf: PractitionerHIV
 Title: "醫師資訊"
 Description: "依據臺灣核心-健康照護服務提供者（TW Core Practitioner） Profile呈現醫師基本資訊之範例"
 Usage: #example

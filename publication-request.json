@@ -1,16 +1,16 @@
 {
-    "package-id" : "tw.gov.mohw.cdc.aids",
+    "package-id" : "tw.gov.mohw.cdc.hiv",
     "version" : "0.1.0",
-    "path" : "https://cdc.gov.tw/aids/0.1.0",
+    "path" : "https://cdc.gov.tw/hiv/0.1.0",
     "mode" : "milestone",
     "status" : "ballot",
     "sequence" : "Releases",
     "descmd" : "第一個發布版本",
     "first" : true,
     "category" : "Public Health",
-    "title"  : "臺灣愛滋病實作指引(TWAIDS IG)",
-    "introduction"  : "臺灣愛滋病實作指引(Taiwan Acquired Immunodeficiency Syndrome Implementation Guide，TWAIDS IG)",
-    "ci-build"  : "https://build.fhir.org/ig/omnifhir/aids"
+    "title"  : "臺灣愛滋病實作指引(TWHIV IG)",
+    "introduction"  : "臺灣愛滋病實作指引(Taiwan Acquired Immunodeficiency Syndrome Implementation Guide，TWHIV IG)",
+    "ci-build"  : "https://build.fhir.org/ig/omnifhir/hiv"
   }
 
 

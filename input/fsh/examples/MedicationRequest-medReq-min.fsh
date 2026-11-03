@@ -1,7 +1,7 @@
 Instance: medReq-min
-InstanceOf: MedicationRequestAIDSDR
+InstanceOf: MedicationRequestHIVDR
 Title: "用藥資訊"
-Description: "依據用藥-MedicationRequest AIDS Drug Profile呈現用藥通報之用藥資訊範例"
+Description: "依據用藥-MedicationRequest HIV Drug Profile呈現用藥通報之用藥資訊範例"
 Usage: #example
 * status = #active
 * intent = #order

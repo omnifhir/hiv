@@ -1,7 +1,7 @@
 Logical: DrugModel
 Id: DrugModel
-Title: "AIDS用藥通報(Drug)之資料模型"
-Description: "AIDS用藥通報(Drug)之資料模型"
+Title: "HIV用藥通報(Drug)之資料模型"
+Description: "HIV用藥通報(Drug)之資料模型"
 * ^version = "0.1.0"
 
 * seqNo 0..1 id "流水號，系統自動增加" "流水號，系統自動增加"
@@ -115,21 +115,21 @@ Description: "AIDS用藥通報(Drug)之資料模型"
 // -----------------------------Mapping-----------------------------
 
 
-Mapping: AIDSDRMessageHeader
-Id: AIDSDRMessageHeader
-Title: "Mapping to MessageHeader AIDS Drug"
+Mapping: HIVDRMessageHeader
+Id: HIVDRMessageHeader
+Title: "Mapping to MessageHeader HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/MessageHeader-aids-drug"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/MessageHeader-hiv-drug"
 * seqNo -> "MessageHeader.id"
 * hospId -> "MessageHeader.sender"
 * hospSeqNo -> "MessageHeader.focus"
 * sampleCode -> "MessageHeader.focus"
 
-Mapping: AIDSDRMedicationRequest
-Id: AIDSDRMedicationRequest
-Title: "Mapping to MedicationRequest AIDS Drug"
+Mapping: HIVDRMedicationRequest
+Id: HIVDRMedicationRequest
+Title: "Mapping to MedicationRequest HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/MedicationRequest-aids-drug"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/MedicationRequest-hiv-drug"
 * hospSeqNo -> "MedicationRequest.identifier"
 * drugNo -> "MedicationRequest.medicationCodeableConcept"
 * id -> "MedicationRequest.subject"
@@ -147,34 +147,34 @@ Target: "https://cdc.gov.tw/aids/StructureDefinition/MedicationRequest-aids-drug
 * drugUse -> "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value"
 * totalQ -> "MedicationRequest.dispenseRequest.quantity.value"
 
-Mapping: AIDSDRPatient
-Id: AIDSDRPatient
-Title: "Mapping to Patient AIDS Drug"
+Mapping: HIVDRPatient
+Id: HIVDRPatient
+Title: "Mapping to Patient HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/Patient-aids"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/Patient-hiv"
 * id -> "Patient.identifier.where(type.coding.code = 'NNxxx').value"
 * hospitalId -> "Patient.identifier.where(type.coding.code = 'MR').value"
 
-Mapping: AIDSDROrganization
-Id: AIDSDROrganization
-Title: "Mapping to Organization AIDS Drug"
+Mapping: HIVDROrganization
+Id: HIVDROrganization
+Title: "Mapping to Organization HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/Organization-aids"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/Organization-hiv"
 * hospId -> "Organization.identifier"
 * traninhospid -> "Organization.identifier"
 
-Mapping: AIDSDRSpecimen
-Id: AIDSDRSpecimen
-Title: "Mapping to Specimen AIDS Drug"
+Mapping: HIVDRSpecimen
+Id: HIVDRSpecimen
+Title: "Mapping to Specimen HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/Specimen-aids-drug"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/Specimen-hiv-drug"
 * sampleCode -> "Specimen.identifier"
 
-Mapping: AIDSDREncounter
-Id: AIDSDREncounter
-Title: "Mapping to Encounter AIDS Drug"
+Mapping: HIVDREncounter
+Id: HIVDREncounter
+Title: "Mapping to Encounter HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/Encounter-aids-drug"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/Encounter-hiv-drug"
 * caseStatus -> "Encounter.class"
 * funcType -> "Encounter.serviceType"
 * caseInDate -> "Encounter.period.start"
@@ -185,18 +185,18 @@ Target: "https://cdc.gov.tw/aids/StructureDefinition/Encounter-aids-drug"
 * cureitemn03 -> "Encounter.diagnosis.condition"
 * cureitemn04 -> "Encounter.diagnosis.condition"
 
-Mapping: AIDSDProcedure
-Id: AIDSDRProcedure
-Title: "Mapping to Procedure AIDS Drug"
+Mapping: HIVDProcedure
+Id: HIVDRProcedure
+Title: "Mapping to Procedure HIV Drug"
 Source: DrugModel
-Target: "https://cdc.gov.tw/aids/StructureDefinition/Procedure-aids-drug"
+Target: "https://cdc.gov.tw/hiv/StructureDefinition/Procedure-hiv-drug"
 * cureitemn01 -> "Procedure.code.text"
 * cureitemn02 -> "Procedure.code.text"
 * cureitemn03 -> "Procedure.code.text"
 * cureitemn04 -> "Procedure.code.text"
 
-Mapping: AIDSDRObservationBodyWeight
-Id: AIDSDRObservationBodyWeight
+Mapping: HIVDRObservationBodyWeight
+Id: HIVDRObservationBodyWeight
 Title: "Mapping to TW Core Observation Body Weight"
 Source: DrugModel
 Target: "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Observation-body-weight-twcore"
