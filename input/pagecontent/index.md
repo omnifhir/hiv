@@ -1,11 +1,11 @@
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
-<p>to do...</p>
+<p>臺灣愛滋病實作指引(Taiwan Human Immunodeficiency Virus Implementation Guide，TWHIV IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在<a href="http://hl7.org/fhir/R4/">FHIR R4.0.1</a>之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於愛滋病「用藥」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 </div>
 
 ### 專案背景
 <div  style="padding-left: 10px;"> 
-<p>to do...</p>
+<p>本案係為強化本署人類免疫缺乏病毒（愛滋病毒）感染防治業務，確保醫療機構用藥及檢驗資訊通報與資料交換之穩定性、可靠性及安全性，並透過標準化設計，提供可供人員閱讀及機器自動讀取之應用宣告說明，以利醫療機構依循一致之標準進行資料交換，提升資料交換之效率與正確性。</p>
 </div>
 
 ### 專案範圍
